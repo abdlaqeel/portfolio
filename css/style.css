@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;500&family=Source+Code+Pro:wght@300&family=Source+Sans+Pro&display=swap');
+*{
+    margin :0;
+    padding: 0;
+}
+
+hr{
+    width: 100%;
+}
+
+.sidebar{
+    background-color: #e4e2e3;
+    /*width: 14vw;*/
+    width: 220px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.sidebar nav{
+    padding: 20px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 24px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    background-color: #f5f5f5;
+    width: 90vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /*background-color: orange;*/
+    /*height: 58vh;*/
+    width: 81vw;
+    margin: 105px auto;
+    display: flex;
+}
+
+.myPicture img{
+    width: 415px;
+    /*height: 58vh;*/
+    height: 420.5px;
+    justify-content: space-around;
+}
+
+.devInfo{    
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.hello{
+    font-size: 70px;
+}
+
+.name{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+.uni{
+    font-size: 28px;
+}
+.about{
+    font-size: 28px;
+}
+
+.buttons{
+    margin-top: 50px;
+}
+.btn{
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    background-color: dodgerblue;
+    font-weight: bold;
+    margin: 7px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #f5f5f5;
+    color: dodgerblue;
+}
+
+/* styles for contactme.html*/
+.contactform{
+    padding: 0 150px;
+    padding-top: 70px ;
+    font-family: 'Roboto Mono', monospace;
+}
+.contactform h1{
+    padding-bottom: 12px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.contactform form div{
+    padding: 10px 0;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    width: 100%;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+.btn-small{
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 12px 0;
+    border-radius: 22px;
+}
+
+.msgbox{
+    height: 20vh;
+    width: 100%;
+}
+.mainCM{
+    display: flex;
+}
+.emailPic img{
+    width: 124px;
+    display: flex;
+    margin: 18px 36px;
+}
+
+/* about.html*/
+
+.chipPic img{
+    width: 380px;
+    margin: 87px 6px;
+    height: 358px;
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    font-family: 'Courier Prime', monospace;
+    margin: -90px 0px;
+    font-size: 20px;
+    color: #fe526f;
+    text-align: center;
+    font-family: 50;
+}
+
+.line1 hr{
+    margin: 17px -248px;
+    width: 977px;
+}
+
+.aboutMe h2{
+    font-family: 'Courier Prime', monospace;
+    color : rgba(0,204,201,.9);
+    margin: 179px 20px;
+    font-size: 30px;
+}
+.para1{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: gray;
+    margin: -166px 19px;
+    width: 450px;
+    font-size: 20px;
+}
+.aboutMe2 h2{
+    color: #f7b740;
+    margin: 220px -382px;
+    font-weight:100;
+    font-size: 30px;
+}
+.para2{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: gray;
+    width: 900px;
+    margin: -200px -380px;
+    font-size: 20px;
+}
+
+.line2 hr{
+    width: 977px;
+    margin: 190px 19px;
+}
+
+
+.media{
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 17px;
+}
+.media ul{
+    display: flex;
+}
+
+.media ul li{
+    padding: 0 10px;
+    list-style-type: none;
+}
+
+.media ul li a i{
+    font-size: 26px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 30px;
+}
+
+footer p{
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+    font-size: 12px;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+footer p a{
+    color: #fe526f;
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+    .myPicture img{
+        width: 300px;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    .devInfo{    
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .infoContainer{
+        display: block;
+    }
+
+    .myPicture{
+        padding-left: 5vw;
+    }
+
+    .hello {
+        font-size: 50px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .uni {
+        font-size: 24PX;
+    }
+
+    .about {
+        font-size: 24px;
+    }
+
+    .sidebar nav li a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
+    .mainCM{
+        display: block;
+    }
+
+    .emailPic{
+        display: none;
+    }
+
+    .contactform {
+        padding: 0 70px;
+        padding-top: 50px;
+    }
+
+    .aboutMe2 h2 {
+        color: #f7b740;
+        margin: 220px 20px;
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+    .para2 {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: gray;
+        width: 100%;
+        margin: -50px 20px;
+        font-size: 20px;
+    }
+
+    .line1{
+        display: none;
+    }
+
+    .line2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .myPicture img {
+        width: 225px;
+        height: auto;
+    }
+
+    .devInfo {
+        padding: 30px;
+    }
+
+    .contactform {
+        padding: 0 40px;
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .hello {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .uni {
+        font-size: 16PX;
+    }
+
+    .about {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,430 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+li{
+	list-style-type: none;
+}
+
+
+body{
+	display: flex;
+	justify-content: center;
+}
+
+.row{
+	display: flex;
+}
+
+.page-content{
+	max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+}
+
+header{
+	padding-bottom: 40px;
+}
+
+.logo{
+	width: 55%;
+}
+
+.logo img{
+	width: 100%;
+	height: auto;
+}
+
+
+.main-menu{
+	width: 45%;
+	justify-content: end;
+	display: flex;
+}
+
+.main-menu ul li{
+	font-family: 'Courier Prime', monospace;
+	font-style: normal;
+    line-height: 1.9em;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.main-menu ul li a{
+	color: #a1a1a1;
+	padding-bottom: 3px;
+	transition: 0.2s;
+}
+
+.main-menu ul li a:hover{
+	border-bottom: 2px solid rgba(87,87,87,.26);
+	color: #FE526F;
+}
+
+.menu-active{
+	color: #F7B740 !important;
+	border-bottom: 2px solid rgba(87,87,87,.26) !important; 
+}
+
+
+.portfolio{
+	border-top: 2px solid rgba(87,87,87,.26);
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.portfolio-text{
+	max-width: 756px;
+	padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 34px;
+    border-bottom: 2px solid rgba(87,87,87,.26) !important; 
+    margin-bottom: 17px;
+}
+
+.portfolio-text h1{
+	font-family: 'Courier Prime', monospace;
+	color: #fe526f;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.1em;
+    font-size: 1.7em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+.portfolio-text p{
+	text-align: center;
+	color: #a1a1a1;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 16px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.portfolio-list{
+	max-width: 756px;
+}
+
+.portfolio-list-img{
+	padding: 17px;
+	width: 38%;
+}
+
+.portfolio-list-img img{
+	width: 100%;
+	height: auto;
+}
+
+.portfolio-list-text{
+	width: 62%;
+	padding: 17px;
+}
+
+.portfolio-list-text h3{
+	font-family: 'Courier Prime', monospace;
+	color: #f7b740;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.1em;
+    font-size: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+    margin-bottom: 0.3em;
+}
+
+.portfolio-list-text p{
+	color: #a1a1a1;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 16px;
+    text-transform: none;
+    text-decoration: none;
+    margin: 0 0 1.4em;
+}
+
+.portfolio-list-text a{
+	color: #fe526f;
+	border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 13px 26px;
+    border-color: #fe526f;
+}
+
+.portfolio-list-text a:hover{
+	color: white;
+	background-color: #fe526f;
+}
+
+
+
+
+
+.project{
+	border-bottom: 2px solid rgba(87,87,87,.26);
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.project-text{
+	border-top: 2px solid rgba(87,87,87,.26);
+	border-bottom: 2px solid rgba(87,87,87,.26);
+	padding: 17px;
+	max-width: 945px;
+}
+
+.project-text h1{
+	padding: 17px 0;
+	text-align: center;
+	font-family: 'Courier Prime', monospace;
+    color: #fe526f;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.1em;
+    font-size: 1.7em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+}
+
+.project-list{
+	max-width: 945px;
+}
+
+.project-list-img{
+	width: 38%;
+	padding: 17px;
+}
+
+.project-list-img img{
+	width: 100%;
+	height: auto;
+}
+
+.project-list-text{
+	width: 62%;
+	padding: 17px;
+	border-bottom: 2px solid rgba(87,87,87,.26);
+}
+
+.project-list-text h2{
+	color: rgba(0,204,201,.9);
+	font-family: 'Courier Prime', monospace;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    font-size: 1.4em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: .2px;
+    margin-bottom: 0.5em;
+}
+
+.project-list-text h3{
+	font-family: 'Courier Prime', monospace;
+	color: #f7b740;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.1em;
+    font-size: 1.2em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+    margin-bottom: 0.3em;
+}
+
+.project-list-text p{
+	color: #a1a1a1;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 16px;
+    text-transform: none;
+    text-decoration: none;
+    margin: 0 0 1.4em;
+}
+
+.project-list-text a{
+	color: #fe526f;
+	border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 13px 26px;
+    border-color: #fe526f;
+}
+
+.project-list-text a:hover{
+	color: white;
+	background-color: #fe526f;
+}
+
+.media{
+	justify-content: center;
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 17px;
+}
+.media ul{
+	display: flex;
+}
+
+.media ul li{
+	padding: 0 10px;
+}
+
+.media ul li a i{
+	font-size: 26px;
+}
+
+footer{
+	text-align: center;
+	padding-top: 17px;
+	padding-bottom: 30px;
+}
+
+footer p{
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+    font-size: 12px;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+footer p a{
+	color: #fe526f;
+}
+
+
+
+.dropdown{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+	display: none;
+}
+
+.dropdown ul{
+	visibility: hidden;
+	height: 0px;
+}
+
+.active-menu ul{
+	visibility: visible !important;
+	height: 100%;
+}
+.active-menu button{
+	border-top: 2px solid rgba(87,87,87,.26) !important;
+}
+.dropdown ul li{
+	padding: 5px 0;
+}
+
+.dropdown ul li a{
+	color: #a1a1a1;
+	font-family: 'Courier Prime', monospace;
+	font-style: normal;
+    line-height: 1.9em;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.dropdown button{
+	background-color: transparent;
+	color: #a1a1a1;
+	font-family: 'Courier Prime', monospace;
+	font-style: normal;
+    line-height: 1.9em;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-top: none;
+    border-bottom: 2px solid rgba(87,87,87,.26);
+    border-left: none;
+    border-right: none;
+    padding: 15px 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px){
+	header div{
+		display: block !important;
+	}
+
+	.logo{
+		width: 100%;
+	}
+
+	.main-menu{
+		width: 100%;
+		display: flex !important;
+	}
+}
+
+
+
+@media only screen and (max-width: 767px){
+	.page-content{
+		padding-top: 0;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.main-menu{
+		display: none !important;
+	}
+
+	.row{
+		display: block;
+	}
+
+	.portfolio-list-img{
+		width: 100%;
+	}
+
+	.portfolio-list-text{
+		width: 100%;
+	}
+
+	.project-list-img{
+		width: 100%;
+	}
+
+	.project-list-text{
+		width: 100%;
+	}
+
+	.dropdown{
+		display: block;
+	}
+}
